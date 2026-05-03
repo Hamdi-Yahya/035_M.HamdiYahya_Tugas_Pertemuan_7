@@ -7,6 +7,7 @@ Project sederhana CRUD (Create, Read, Update, Delete) untuk data anggota perpust
 
 ## Struktur Folder
 
+```text
 perpustakaan/
 ├── config/
 │   └── database.php
@@ -20,9 +21,11 @@ perpustakaan/
         ├── edit.php
         ├── delete.php
         └── uploads/
+```
 
 ## SQL Dump Tabel Anggota
 
+```sql
 CREATE TABLE anggota (
     id_anggota INT AUTO_INCREMENT PRIMARY KEY,
     kode_anggota VARCHAR(20) UNIQUE NOT NULL,
@@ -48,3 +51,4 @@ VALUES
 ('AGT-003', 'Ahmad Dhani', 'ahmad@email.com', '081234567892', 'Surabaya', '1999-03-03', 'Laki-laki', 'Musisi', CURDATE(), 'Aktif'),
 ('AGT-004', 'Dewi Lestari', 'dewi@email.com', '081234567893', 'Yogyakarta', '1998-04-04', 'Perempuan', 'Penulis', CURDATE(), 'Aktif'),
 ('AGT-005', 'Rizky Febian', 'rizky@email.com', '081234567894', 'Jakarta', '2002-05-05', 'Laki-laki', 'Penyanyi', CURDATE(), 'Nonaktif');
+```
